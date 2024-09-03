@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: black;
+    width: 90%; /* Use percentage to make it responsive */
+    max-width: 400px; /* Max width for larger screens */
+    height: auto; /* Adjust height automatically */
+    margin: 30px auto; /* Center the box */
+    display: block;
+    padding: 20px; /* Add padding for better content spacing */
+}
+
+.img img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    border: 2px solid white;
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+}
+
+.name, .name-1{
+    color:  rgba(15, 231, 234, 0.862);
+    margin: 10px 30px;
+    font-size: 5vw; /* Responsive font size */
+    text-align: center;
+}
+
+.name-1{
+    font-weight: bold;
+    font-size: 6vw; /* Responsive font size */
+}
+
+.box-1{
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: black;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    margin: 30px auto;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.detail{
+    text-align: center;
+    margin: 20px;
+    font-size: 4vw; /* Responsive font size */
+}
+
+.Profile{
+    font-size: 8vw; /* Responsive font size */
+    color: rgb(49, 53, 100);
+}
+
+.god{
+    font-size: 6vw; /* Responsive font size */
+    margin: 50px;
+}
+
+.NAME, .age, .mob, .mail, .add{
+    margin: 30px;
+    color: aqua;
+    font-size: 4vw; /* Responsive font size */
+}
+
+.icon{
+    display: flex;
+    margin: 10px auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon img{
+    width: 10vw; /* Responsive size */
+    height: 10vw; /* Responsive size */
+    max-width: 50px; /* Maximum size */
+    max-height: 50px; /* Maximum size */
+    border-radius: 50%;
+} 
+
+/* Media Queries for different screen sizes */
+@media (min-width: 768px) {
+    .box, .box-1 {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .name, .name-1, .Profile, .god, .NAME, .age, .mob, .mail, .add, .detail {
+        font-size: 2vw;
+    }
+
+    .icon img {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .box, .box-1 {
+        width: 50%;
+    }
+
+    .name, .name-1, .Profile, .god, .NAME, .age, .mob, .mail, .add, .detail {
+        font-size: 1.5vw;
+    }
+
+    .icon img {
+        width: 3vw;
+        height: 3vw;
+    }
+}

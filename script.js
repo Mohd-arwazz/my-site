@@ -1,0 +1,1 @@
+document.getElementsByid{'arwaz'}.innertext
